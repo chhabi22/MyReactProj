@@ -35,15 +35,19 @@ class BooksList extends React.Component{
     return(
       <View style={styles.wholeStyle}>
         <View style={styles.viewStyle}>
-          <Text style={styles.header}>Book List</Text>
+          
           <TextInput 
             style={styles.inputStyle}
             onChangeText={(text)=>this.setState({text})}
             value={this.state.text}
           />
+          <View style={{
+             marginTop: 10,
+            
+           }}/>
           <Button 
-            title="Add Book Name"
-            color="red"
+            title="Add Your Book Name"
+            color="#be8de0"
             onPress={this.addNewBook}
           />
           <View style={{marginTop: 100}}/>
@@ -56,7 +60,7 @@ class BooksList extends React.Component{
 
 const styles = {
   wholeStyle: {
-    backgroundColor: "#0288D1",
+    backgroundColor: "#ebdaf7",
     flex:1
   },
   viewStyle: {
@@ -68,18 +72,13 @@ const styles = {
   },
   inputStyle:{
     height: 40,
-    borderColor: "white",
+    borderColor: "black",
     borderWidth: 1
   },
-  header:{
-    fontSize: 30,
-    color: 'white',
-    fontWeight: 'bold'
-  },
   addBook: {
-    fontSize: 24,
-    color: 'pink'
-  }
+      fontSize: 20,
+      color: 'Black'
+    }
 }
 
 export default BooksList

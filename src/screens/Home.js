@@ -5,18 +5,24 @@ function Home(props) {
     const { navigation } = props
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Home Screen</Text>
+      <Text style={styles.text}>Welcome to the World of Books!</Text>
 
       <TouchableOpacity
         style={styles.buttonContainer}
         onPress={() => navigation.navigate('BooksList')}>
-        <Text style={styles.buttonText}>Go to BooksList</Text>
+        <Text style={styles.buttonText}>Add Your Book Names</Text>
       </TouchableOpacity>
 
       <TouchableOpacity
         style={styles.buttonContainer}
         onPress={() => navigation.navigate('RecommendBooks')}>
-        <Text style={styles.buttonText}>See Recommended Books</Text>
+        <Text style={styles.buttonText}>Our Recommended Books</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity
+        style={styles.buttonContainer}
+        onPress={() => navigation.navigate('AboutScreen')}>
+        <Text style={styles.buttonText}>Know about us!</Text>
       </TouchableOpacity>
     </View>
   )
@@ -27,22 +33,22 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#ebebeb'
+    backgroundColor: '#ebdaf7'
   },
   text: {
-    color: '#101010',
+    color: '#black',
     fontSize: 24,
     fontWeight: 'bold'
   },
   buttonContainer: {
-    backgroundColor: '#222',
+    backgroundColor: '#b167e6',
     borderRadius: 5,
     padding: 10,
     margin: 20
   },
   buttonText: {
     fontSize: 20,
-    color: '#fff'
+    color: 'black'
   }
 })
 
